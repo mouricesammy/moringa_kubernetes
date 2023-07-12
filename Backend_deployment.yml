@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: yolo-k8s-backend
-          image: backend:latest
+          image: mourice/backend:latest
           resources:
             limits:
               memory: "128Mi"
