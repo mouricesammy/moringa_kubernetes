@@ -27,11 +27,11 @@ spec:
           ports:
             - containerPort: 5050
           env:
-            - name: MONGO_URI
+            - name: MONGODB_URI
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: MONGO_URI
+                  key: MONGODB_URI
           volumeMounts:
             - name: backend-storage
               mountPath: /app/data
