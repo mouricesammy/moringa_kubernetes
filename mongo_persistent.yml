@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
+labels:
+    role: mongo
   name: mongo-storage
 spec:
   accessModes:
@@ -8,3 +10,6 @@ spec:
   resources:
     requests:
       storage: 1Gi
+
+
+
